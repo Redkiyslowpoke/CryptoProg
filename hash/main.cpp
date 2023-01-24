@@ -21,7 +21,6 @@ int main ()
     char* buf = new char[fsize];
     f.read(buf,fsize);                  
     string file = string(buf);
-    file.erase(file.size()-1, 1);
     f.close();
     */
     string digest;
