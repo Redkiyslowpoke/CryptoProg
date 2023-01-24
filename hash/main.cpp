@@ -16,8 +16,8 @@ int main ()
     /*
     ifstream f("TextToHash.txt");
     f.seekg(0,ios::end);
-    int fsize = f.tellg();              для сохранения
-    f.seekg(0,ios::beg);               содержимого файла
+    int fsize = f.tellg();             // для сохранения
+    f.seekg(0,ios::beg);             //  содержимого файла
     char* buf = new char[fsize];
     f.read(buf,fsize);                  
     string file = string(buf);
@@ -27,8 +27,8 @@ int main ()
 
     /*
     StringSource(file, true,             
-                 new HashFilter(hash,                           при чтении 
-                                new HexEncoder(              содержимого файла
+                 new HashFilter(hash,                          // при чтении 
+                                new HexEncoder(             // содержимого файла
                                     new StringSink(digest))));
     */
     
@@ -36,7 +36,7 @@ int main ()
                  new HashFilter(hash,       
                                 new HexEncoder(     
                                     new StringSink(digest))));
-    // cout << file << endl;  демонстрация содержимого файла
+    // cout << file << endl; // демонстрация содержимого файла
     cout << digest << endl;
 
     return 0;
